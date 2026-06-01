@@ -1,4 +1,4 @@
-2.0-flash/**
+/**
  * NORI Vision Server
  * Handles describe and hazard scanning via Gemini 1.5 Flash.
  * Deploy to Railway / Render — one instance handles all users.
