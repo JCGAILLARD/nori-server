@@ -1,4 +1,4 @@
-/**
+2.0-flash/**
  * NORI Vision Server
  * Handles describe and hazard scanning via Gemini 1.5 Flash.
  * Deploy to Railway / Render — one instance handles all users.
@@ -107,7 +107,7 @@ Rules:
 // ── Helper: call Gemini with image ────────────────────────────────────────
 async function callGemini(base64Image, mimeType, prompt) {
   const client = getNextClient();
-  const model  = client.getGenerativeModel({ model: 'gemini-2.5-flash' });
+  const model  = client.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
   const result = await model.generateContent([
     {
