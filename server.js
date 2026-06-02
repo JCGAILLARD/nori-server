@@ -107,7 +107,7 @@ Rules:
 // ── Helper: call Gemini with image ────────────────────────────────────────
 async function callGemini(base64Image, mimeType, prompt) {
   const client = getNextClient();
-  const model  = client.getGenerativeModel({ model: 'gemini-2.0-flash' });
+  const model  = client.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
   const result = await model.generateContent([
     {
